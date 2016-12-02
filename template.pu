@@ -1,8 +1,0 @@
-@startuml
-
-class template {
-  + filepath
-  + merge()
-  + load()
-}
-@enduml

@@ -18,5 +18,5 @@ TemplateApp.prototype.execute = execute_;
 module.exports = new TemplateApp();
 
 // debug
-var templateApp = new TemplateApp();
-templateApp.execute();
+// var templateApp = new TemplateApp();
+// templateApp.execute();

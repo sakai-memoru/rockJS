@@ -2,7 +2,13 @@
 var template = require('./main/template.js');
 
 var execute_ = function(){
-  var result = template.merge();
+  var templ = '{{subject}} is {{name}}. ';
+  var opts  = {
+    subject : 'The robot',
+    name : 'momo'
+  };
+
+  var result = template.merge(templ,opts);
   console.log(result);
 }
 
@@ -12,5 +18,5 @@ TemplateApp.prototype.execute = execute_;
 module.exports = new TemplateApp();
 
 // debug
-// var templateApp = new TemplateApp();
-// templateApp.execute();
+var templateApp = new TemplateApp();
+templateApp.execute();

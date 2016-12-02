@@ -1,0 +1,29 @@
+{
+  "name": "rockjs",
+  "version": "1.0.0",
+  "description": "nodejs modules wrapper function",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sakai-memoru/rockjs.git"
+  },
+  "keywords": [
+    "common"
+  ],
+  "author": "sakai.memoru@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakai-memoru/rockjs/issues"
+  },
+  "homepage": "https://github.com/sakai-memoru/rockjs#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

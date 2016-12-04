@@ -1,3 +1,3 @@
-// execute template-app
+// execute sample
 var template = require('./appTemplate');
 template.execute();

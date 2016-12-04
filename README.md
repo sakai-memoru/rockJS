@@ -13,7 +13,7 @@ template = require('common-module\template')
 
 ## Class Design
 
-Template
+Template  
 ![template](./plantuml/template.png)
 
 

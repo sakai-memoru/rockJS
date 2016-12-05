@@ -1,0 +1,7 @@
+@startuml
+class Template{
+  +filepath {string}
+  +merge(template,param)
+  +load(filepath)
+}
+@enduml

@@ -1,0 +1,19 @@
+%% Example of sequence diagram
+sequenceDiagram
+  participant SkypeFB
+  participant Bot
+  participant Flow(意図判定)
+  participant RECAIUS MOCK
+  participant Container
+
+  SkypeFB->>Bot : Chat Text + User Info
+  Bot->>Flow(意図判定) : message dispatch
+  Flow(意図判定)->>Container : User Info and session
+  Flow(意図判定)->>RECAIUS MOCK : 形態素解析＆Word判定
+  RECAIUS MOCK-->>Flow(意図判定) : 判定結果(has command phrase or not)
+  Flow(意図判定)->>Flow(意図判定) : 意図判定(Judge start meeting)
+  Flow(意図判定)->>Container : Set Mode : Meeting On
+  Flow(意図判定) -->> Bot : Set mode : Meeting On ,\n message : 「議事録の記録を開始します」
+  Bot-->> SkypeFB : return message
+  Flow(意図判定)->>Flow(議事録作成) : Action：jot down minutes
+  Note left of Flow(議事録作成): Flow(議事録作成)に処理を委譲

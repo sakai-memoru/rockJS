@@ -1,5 +1,5 @@
 // ./main/template.js
-var template = require('./lib/template.js');
+var template = require('./lib/Template.js');
 
 var execute_ = function(){
   // execute merge

@@ -8,13 +8,13 @@ rockjs
 ## Usage
 
 ```js
-template = require('common-module\template')
+var template = require('.\lib\template');
 ```
 
 ## Class Design
 
 Template  
-![template](./plantuml/template.png)
+![CTemplate](./plantuml/CTemplate.png)
 
 
 ## Installation

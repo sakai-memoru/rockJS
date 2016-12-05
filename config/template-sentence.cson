@@ -1,0 +1,2 @@
+# Dialog用 Regexp sentence
+dialog_regexp_pattern : '{{ary_pattern}}'
